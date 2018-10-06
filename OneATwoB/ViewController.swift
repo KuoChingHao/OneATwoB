@@ -10,11 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var displayEnterNumberTextField: UITextField!
+    
+    @IBOutlet weak var displayResultLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
+    @IBAction func numberBtnAction(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func confirmBtnAction(_ sender: Any) {
+        
+        
+    }
+    
+    
+    
+    
+    
 
 }
 
