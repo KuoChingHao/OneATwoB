@@ -12,14 +12,31 @@
 
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
+export FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT=180
 
 default_platform(:ios)
 
 platform :ios do
   desc "Push a new release build to the App Store"
-  lane :release do
-    increment_build_number(xcodeproj: "OneATwoB.xcodeproj")
-    build_app(scheme: "OneATwoB")
-    upload_to_app_store
-  end
+#  lane :release do
+#    increment_build_number(xcodeproj: "OneATwoB.xcodeproj")
+#    build_app(scheme: "OneATwoB")
+#    upload_to_app_store
+#  end
+
+	lane :test do 
+		increment_build_number
+		xcclean
+		scan
+		build_app(scheme: "OneATwoB")
+	end
+	# error block is executed when a error occurs
+	error do |lane, exception|
+  		slack(
+    		# message with short human friendly message
+    		message: exception.to_s, 
+    		success: false, 
+    		# Output containing extended log output
+    		payload: { "Output" => exception.error_info.to_s })
+	end
 end
