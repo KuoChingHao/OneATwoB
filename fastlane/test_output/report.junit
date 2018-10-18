@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='OneATwoBUITests.xctest' tests='8' failures='0'>
+  <testsuite name='OneATwoBTests.OneATwoBTests' tests='7' failures='0'>
+    <testcase classname='OneATwoBTests.OneATwoBTests' name='testCheckEnterNumber1' time='0.012'/>
+    <testcase classname='OneATwoBTests.OneATwoBTests' name='testCheckEnterNumber2' time='0.002'/>
+    <testcase classname='OneATwoBTests.OneATwoBTests' name='testCheckEnterNumber3' time='0.002'/>
+    <testcase classname='OneATwoBTests.OneATwoBTests' name='testCheckResult' time='0.005'/>
+    <testcase classname='OneATwoBTests.OneATwoBTests' name='testCreateResultNumber' time='0.001'/>
+    <testcase classname='OneATwoBTests.OneATwoBTests' name='testExample' time='0.001'/>
+    <testcase classname='OneATwoBTests.OneATwoBTests' name='testPerformanceExample' time='0.464'/>
+  </testsuite>
+  <testsuite name='OneATwoBUITests.OneATwoBUITests' tests='1' failures='0'>
+    <testcase classname='OneATwoBUITests.OneATwoBUITests' name='testExample' time='4.368'/>
+  </testsuite>
+</testsuites>
